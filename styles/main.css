@@ -1,0 +1,75 @@
+body {
+    display:flex;
+    min-height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    overflow: 0;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    min-width: 600px;
+    width: 90%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+header > img {
+    width: 150px ;
+}
+
+.top_nav {
+    display:flex;
+    flex-direction: start;
+    align-items: center;
+}
+
+.top_nav > nav > ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.top_nav > nav > li {
+    flex: auto;
+}
+
+.top_nav > nav > ul > li {
+    position: relative;
+}
+
+.top_nav > nav > ul > li:hover > .sub_nav {
+    display: block;
+}
+
+.top_nav > nav > ul > li {
+    position: relative;
+}
+
+.top_nav > nav {
+    flex-grow: 1;
+}
+
+.sub_nav {
+    position: absolute;
+    left: -4px;
+    display: none;
+    min-width: 150px;
+    background-color: azure;
+    list-style: none;
+}
+
+.sub_nav > li {
+    padding: 4px;
+}
