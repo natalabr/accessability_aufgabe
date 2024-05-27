@@ -4,13 +4,12 @@ body {
     flex-direction: row;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
 }
 
 * {
-    overflow: 0;
     margin: 0;
     padding: 0;
-    border-collapse: collapse;
     outline: 0;
     border: 0;
     box-sizing: border-box;
@@ -20,12 +19,11 @@ body {
     min-width: 600px;
     width: 90%;
     display: flex;
-    text-align: center;
     flex-direction: column;
 }
 
 header > img {
-    width: 150px ;
+    width: 170px ;
 }
 
 .top_nav {
@@ -34,11 +32,16 @@ header > img {
     align-items: center;
 }
 
+.top-nav > nav {
+    flex-grow: 1;
+}
+
 .top_nav > nav > ul {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
+    text-decoration: none;
 }
 
 .top_nav > nav > li {
@@ -72,4 +75,56 @@ header > img {
 
 .sub_nav > li {
     padding: 4px;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color:rgb(51, 51, 255);
+    font-weight: bold;
+}
+
+a:hover {
+    color:black;
+}
+
+.left-nav > ul {
+    padding: 4px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-nav > ul > li {
+    padding: 4px;
+}
+
+.left-nav > ul > li > a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.left-nav > ul > li > a.left-nav-selected {
+    font-weight: bold;
+}
+
+.lefts-nav {
+    margin-top: 16px;
+    width: 250px;
+}
+
+main {
+    flex-grow: 1;
+    flex-direction: row;
+    display:flex;
+}
+
+section.main-content {
+    flex-grow: 1;
+    color:rgb(70, 70, 255);
+    flex-direction: column;
+    display:flex;
+    font-size: 15px;
+    padding-left: 60px;
 }
