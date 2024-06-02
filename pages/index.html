@@ -2,33 +2,53 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="Contesa Shop" content="width=device-width, initial-scale=1.0">
-    <title>Contasa online shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/styles/main.css">
+    <title>Contasa online shop</title>
 </head>
 <body>
-
     <div class="content">
-    
-        <header class="top_nav">
-
-            <img src="/images/contasa_logo.png" alt="Contasa Corporation Logo"></a>
-
+        <header class="top-nav">
+            <img src="/images/contasa_logo.png" alt="Contasa Corporation Logo">
             <nav>
-                <ul role="navigation">
-                  <li class="list_in_header"><a href="#">Bürobedarf</a></li>
-                  <li class="list_in_header"><a href="#">Netzwerk</a></li>
-                  <li class="list_in_header">
-                        <a href="#">Mobile</a>
-                        <ul role="navigation" class="sub_nav">
-                            <li class="list_in_list"><a>Notebook</a></li>
-                            <li class="list_in_list"><a>Tablet</a></li>
-                            <li class="list_in_list"><a>Mobil Phones</a></li>
-                            <li class="list_in_list"><a>Convertibles</a></li>
+                <ul role="menubar">
+                    <li role="none">
+                        <a id="büro-nav" role="menuitem" href="#">Bürobedarf</a>
+                        <ul id="büro-subnav" role="menu" class="sub-nav">
+                            <li role="menuitem"><a href="#">Arbeitsplatz</a></li>
+                            <li role="menuitem"><a href="#">Möbel</a></li>
+                            <li role="menuitem"><a href="#">Kleber</a></li>
+                            <li role="menuitem"><a href="#">Schneiden</a></li>
                         </ul>
-                  </li>  
-                  <li class="list_in_header"><a href="#">PC Komponenten</a></li>
+                    </li>
+                    <li role="none">
+                        <a id="netzwerk-nav" href="#">Netzwerk</a>
+                        <ul id="netzwerk-subnav" role="menu" class="sub-nav">
+                            <li role="menuitem"><a href="#">Router/Firewall</a></li>
+                            <li role="menuitem"><a href="#">Kabel</a></li>
+                            <li role="menuitem"><a href="#">NAS</a></li>
+                        </ul>
+                    </li>
+                    <li role="none">
+                        <a id="mobile-nav" href="#">Mobile</a>
+                        <ul id="mobile-subnav" role="menu" class="sub-nav">
+                            <li class="menuitem"><a href="#">Notebook</a></li>
+                            <li class="menuitem"><a href="#">Tablet</a></li>
+                            <li class="menuitem"><a href="#">Mobil Phones</a></li>
+                            <li class="menuitem"><a href="#">Convertibles</a></li>
+                        </ul>
+                    </li>
+                    <li role="none">
+                        <a id="pc-nav" href="#">PC Komponenten</a>
+                        <ul id="pc-subnav" role="menu" class="sub-nav">
+                            <li role="menuitem"><a href="#">Gehäuse</a></li>
+                            <li role="menuitem"><a href="#">Grafikkarte</a></li>
+                            <li role="menuitem"><a href="#">Mainbaord</a></li>
+                            <li role="menuitem"><a href="#">Prozessor</a></li>
+                            <li role="menuitem"><a href="#">RAM</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -47,12 +67,64 @@
 
             <section class="main-content">
                 <header>
+                    <ul class="top-text">
+                        <li><p>Home</p></li>
+                        <li><p> > </p></li>
+                        <li><p class="left-nav-selected">Möbel</p></li>
+                    </ul>
                     <h1>Möbel</h1>
                 </header>
+                <div class="product-list">
+                    <article class="product">
+                        <header>
+                            <figure>
+                                <img src="/images/product1.jpg" alt="Casaria Schreibtisch" width="200">
+                                <figcaption>Schreibtisch</figcaption>
+                            </figure>
+                        </header>
+                        <p>Casaria Schreibtisch</p>
+                        <p class="price">169.95.-</p>
+                        <footer class="dimension">160 x 75 x 118 cm</footer>
+                    </article>
+                    <article class="product">
+                        <header>
+                            <figure>
+                                <img src="/images/product2.webp" alt="Schreibtisch Songmics Industrial" width="200">
+                                <figcaption>Schreibtisch</figcaption>
+                            </figure>
+                        </header>
+                        <p>Songmics Industrial</p>
+                        <p class="price">270.-</p>
+                        <footer class="dimension">150 x 70 x 100 cm</footer>
+                    </article>
+                    <article class="product">
+                        <header>
+                            <figure>
+                                <img src="/images/product3.jpg" alt="Schreibtisch Vasagle Industrial Desk" width="200">
+                                <figcaption>Schreibtisch</figcaption>
+                            </figure>
+                        </header>
+                        <p>Vasagle Industrial Desk</p>
+                        <p class="price">129.-</p>
+                        <footer class="dimension">140 x 60 x 75 cm</footer>
+                    </article>
+                    <article class="product">
+                        <header>
+                            <figure>
+                                <img src="/images/product4.jpg" alt="Schreibtisch ByLiving LOBO" width="200">
+                                <figcaption>Schreibtisch</figcaption>
+                            </figure>
+                        </header>
+                        <p>ByLiving LOBO</p>
+                        <p class="price">485.-</p>
+                        <footer class="dimension">138 x 55 x 75 cm</footer>
+                    </article>
+                </div>
             </section>
-
         </main>
+        <footer>
+            <p>Copyright © Contasa Company</p>
+        </footer>
     </div>
-
 </body>
 </html>

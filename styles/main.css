@@ -4,7 +4,6 @@ body {
     flex-direction: row;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
 }
 
 * {
@@ -22,13 +21,24 @@ body {
     flex-direction: column;
 }
 
-header > img {
-    width: 170px ;
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color:rgb(59, 109, 201);
+    font-weight: bold;
 }
 
-.top_nav {
+a:hover {
+    color:black;
+}
+
+header > img {
+    width: 150px ;
+}
+
+.top-nav {
     display:flex;
-    flex-direction: start;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -36,7 +46,7 @@ header > img {
     flex-grow: 1;
 }
 
-.top_nav > nav > ul {
+.top-nav > nav > ul {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -44,48 +54,41 @@ header > img {
     text-decoration: none;
 }
 
-.top_nav > nav > li {
+.top-nav > nav > li {
     flex: auto;
 }
 
-.top_nav > nav > ul > li {
+.top-nav > nav > ul > li {
     position: relative;
 }
 
-.top_nav > nav > ul > li:hover > .sub_nav {
+.top-nav > nav > ul > li:hover > .sub-nav {
     display: block;
 }
 
-.top_nav > nav > ul > li {
+.top-nav > nav > ul > li {
     position: relative;
 }
 
-.top_nav > nav {
+.top-nav > nav {
     flex-grow: 1;
 }
 
-.sub_nav {
+.sub-nav {
     position: absolute;
     left: -4px;
     display: none;
     min-width: 150px;
-    background-color: azure;
+    background-color: rgb(237, 241, 241);
     list-style: none;
 }
 
-.sub_nav > li {
+.sub-nav > li {
     padding: 4px;
 }
 
-a {
-    text-decoration: none;
-    list-style-type: none;
-    color:rgb(51, 51, 255);
-    font-weight: bold;
-}
-
-a:hover {
-    color:black;
+.sub-nav:hover {
+    display: block;
 }
 
 .left-nav > ul {
@@ -109,7 +112,7 @@ a:hover {
     font-weight: bold;
 }
 
-.lefts-nav {
+.left-nav {
     margin-top: 16px;
     width: 250px;
 }
@@ -120,11 +123,57 @@ main {
     display:flex;
 }
 
-section.main-content {
+.main-content {
     flex-grow: 1;
-    color:rgb(70, 70, 255);
+    color:rgb(59, 109, 201);
     flex-direction: column;
     display:flex;
     font-size: 15px;
-    padding-left: 60px;
+    padding-top: 22px;
+}
+
+.main-content > header > h1 {
+    padding-top: 25px;
+}
+
+.main-content > header > ul.top-text > li{
+    display: inline-block;
+    list-style: none;
+}
+
+.main-content > header > ul > li > p.left-nav-selected{
+    font-weight: bold;
+}
+
+.product-list {
+    display: flex;
+    padding-top: 20px;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    padding-right: 15px;
+    padding-bottom: 30px;
+    color:black
+}
+
+.product > .price {
+    font-weight: bold;
+    color:rgb(59, 109, 201);
+}
+
+.product > .dimension {
+    font-size: 12px;
+}
+
+.product figcaption {
+    color:rgb(59, 109, 201);
+}
+
+footer > p {
+    font-size: 12px;
+    margin-bottom: 10px;
 }
