@@ -66,10 +66,6 @@ header > img {
     display: block;
 }
 
-.top-nav > nav > ul > li {
-    position: relative;
-}
-
 .top-nav > nav {
     flex-grow: 1;
 }
